@@ -17,6 +17,7 @@ func init() {
 	rootCmd.AddCommand(chatCmd)
 
 	chatCmd.Flags().StringP("config", "c", "~/.config/openttd/openttd.cfg", "openttd config file")
+	chatCmd.Flags().BoolP("debug", "d", false, "debug mode")
 	chatCmd.Flags().StringP("name", "n", "OpenTTD-Admin", "client name")
 	chatCmd.Flags().StringP("version", "v", "1.10.3", "client version")
 }
@@ -31,6 +32,7 @@ var chatCmd = &cobra.Command{
 
 		name, _ := cmd.Flags().GetString("name")
 		version, _ := cmd.Flags().GetString("version")
+		debug, _ := cmd.Flags().GetBool("debug")
 
 		if len(args) == 1 {
 			address = args[0]
@@ -114,10 +116,14 @@ var chatCmd = &cobra.Command{
 
 					adm.Send(admin.NewAdminUpdateFrequency(admin.AdminUpdateChat, admin.AdminFrequencyAutomatic))
 				case *admin.ServerChat:
-					//fmt.Fprintf(rl, "# %+v\n", msg)
-					fmt.Fprintf(rl, "%d> %s\n", msg.ClientId, msg.Message)
+					if debug {
+						fmt.Fprintf(rl, "# %+v\n", msg)
+					}
+					log.Printf("%d> %s\n", msg.ClientId, msg.Message)
 				default:
-					fmt.Fprintf(rl, "# %+v\n", msg)
+					if debug {
+						fmt.Fprintf(rl, "# %+v\n", msg)
+					}
 				}
 
 			}
