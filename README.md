@@ -1,0 +1,2 @@
+# openttd-admin
+OpenTTD Admin
