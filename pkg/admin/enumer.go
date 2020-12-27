@@ -397,15 +397,15 @@ func (i *AdminUpdateType) UnmarshalText(text []byte) error {
 }
 
 const (
-	_ColourName_0      = "DarkBluePaleGreenPinkYellowRedLightBlueGreenDarkGreenBlueCreamMauvePurpleOrangeBrownGreyWhiteEnd"
-	_ColourLowerName_0 = "darkbluepalegreenpinkyellowredlightbluegreendarkgreenbluecreammauvepurpleorangebrowngreywhiteend"
-	_ColourName_1      = "Invalid"
-	_ColourLowerName_1 = "invalid"
+	_ColourName_0      = "ColourDarkBlueColourPaleGreenColourPinkColourYellowColourRedColourLightBlueColourGreenColourDarkGreenColourBlueColourCreamColourMauveColourPurpleColourOrangeColourBrownColourGreyColourWhiteColourEnd"
+	_ColourLowerName_0 = "colourdarkbluecolourpalegreencolourpinkcolouryellowcolourredcolourlightbluecolourgreencolourdarkgreencolourbluecolourcreamcolourmauvecolourpurplecolourorangecolourbrowncolourgreycolourwhitecolourend"
+	_ColourName_1      = "ColourInvalid"
+	_ColourLowerName_1 = "colourinvalid"
 )
 
 var (
-	_ColourIndex_0 = [...]uint8{0, 8, 17, 21, 27, 30, 39, 44, 53, 57, 62, 67, 73, 79, 84, 88, 93, 96}
-	_ColourIndex_1 = [...]uint8{0, 7}
+	_ColourIndex_0 = [...]uint8{0, 14, 29, 39, 51, 60, 75, 86, 101, 111, 122, 133, 145, 157, 168, 178, 189, 198}
+	_ColourIndex_1 = [...]uint8{0, 13}
 )
 
 func (i Colour) String() string {
@@ -423,86 +423,86 @@ func (i Colour) String() string {
 // Re-run the stringer command to generate them again.
 func _ColourNoOp() {
 	var x [1]struct{}
-	_ = x[DarkBlue-(0)]
-	_ = x[PaleGreen-(1)]
-	_ = x[Pink-(2)]
-	_ = x[Yellow-(3)]
-	_ = x[Red-(4)]
-	_ = x[LightBlue-(5)]
-	_ = x[Green-(6)]
-	_ = x[DarkGreen-(7)]
-	_ = x[Blue-(8)]
-	_ = x[Cream-(9)]
-	_ = x[Mauve-(10)]
-	_ = x[Purple-(11)]
-	_ = x[Orange-(12)]
-	_ = x[Brown-(13)]
-	_ = x[Grey-(14)]
-	_ = x[White-(15)]
-	_ = x[End-(16)]
-	_ = x[Invalid-(255)]
+	_ = x[ColourDarkBlue-(0)]
+	_ = x[ColourPaleGreen-(1)]
+	_ = x[ColourPink-(2)]
+	_ = x[ColourYellow-(3)]
+	_ = x[ColourRed-(4)]
+	_ = x[ColourLightBlue-(5)]
+	_ = x[ColourGreen-(6)]
+	_ = x[ColourDarkGreen-(7)]
+	_ = x[ColourBlue-(8)]
+	_ = x[ColourCream-(9)]
+	_ = x[ColourMauve-(10)]
+	_ = x[ColourPurple-(11)]
+	_ = x[ColourOrange-(12)]
+	_ = x[ColourBrown-(13)]
+	_ = x[ColourGrey-(14)]
+	_ = x[ColourWhite-(15)]
+	_ = x[ColourEnd-(16)]
+	_ = x[ColourInvalid-(255)]
 }
 
-var _ColourValues = []Colour{DarkBlue, PaleGreen, Pink, Yellow, Red, LightBlue, Green, DarkGreen, Blue, Cream, Mauve, Purple, Orange, Brown, Grey, White, End, Invalid}
+var _ColourValues = []Colour{ColourDarkBlue, ColourPaleGreen, ColourPink, ColourYellow, ColourRed, ColourLightBlue, ColourGreen, ColourDarkGreen, ColourBlue, ColourCream, ColourMauve, ColourPurple, ColourOrange, ColourBrown, ColourGrey, ColourWhite, ColourEnd, ColourInvalid}
 
 var _ColourNameToValueMap = map[string]Colour{
-	_ColourName_0[0:8]:        DarkBlue,
-	_ColourLowerName_0[0:8]:   DarkBlue,
-	_ColourName_0[8:17]:       PaleGreen,
-	_ColourLowerName_0[8:17]:  PaleGreen,
-	_ColourName_0[17:21]:      Pink,
-	_ColourLowerName_0[17:21]: Pink,
-	_ColourName_0[21:27]:      Yellow,
-	_ColourLowerName_0[21:27]: Yellow,
-	_ColourName_0[27:30]:      Red,
-	_ColourLowerName_0[27:30]: Red,
-	_ColourName_0[30:39]:      LightBlue,
-	_ColourLowerName_0[30:39]: LightBlue,
-	_ColourName_0[39:44]:      Green,
-	_ColourLowerName_0[39:44]: Green,
-	_ColourName_0[44:53]:      DarkGreen,
-	_ColourLowerName_0[44:53]: DarkGreen,
-	_ColourName_0[53:57]:      Blue,
-	_ColourLowerName_0[53:57]: Blue,
-	_ColourName_0[57:62]:      Cream,
-	_ColourLowerName_0[57:62]: Cream,
-	_ColourName_0[62:67]:      Mauve,
-	_ColourLowerName_0[62:67]: Mauve,
-	_ColourName_0[67:73]:      Purple,
-	_ColourLowerName_0[67:73]: Purple,
-	_ColourName_0[73:79]:      Orange,
-	_ColourLowerName_0[73:79]: Orange,
-	_ColourName_0[79:84]:      Brown,
-	_ColourLowerName_0[79:84]: Brown,
-	_ColourName_0[84:88]:      Grey,
-	_ColourLowerName_0[84:88]: Grey,
-	_ColourName_0[88:93]:      White,
-	_ColourLowerName_0[88:93]: White,
-	_ColourName_0[93:96]:      End,
-	_ColourLowerName_0[93:96]: End,
-	_ColourName_1[0:7]:        Invalid,
-	_ColourLowerName_1[0:7]:   Invalid,
+	_ColourName_0[0:14]:         ColourDarkBlue,
+	_ColourLowerName_0[0:14]:    ColourDarkBlue,
+	_ColourName_0[14:29]:        ColourPaleGreen,
+	_ColourLowerName_0[14:29]:   ColourPaleGreen,
+	_ColourName_0[29:39]:        ColourPink,
+	_ColourLowerName_0[29:39]:   ColourPink,
+	_ColourName_0[39:51]:        ColourYellow,
+	_ColourLowerName_0[39:51]:   ColourYellow,
+	_ColourName_0[51:60]:        ColourRed,
+	_ColourLowerName_0[51:60]:   ColourRed,
+	_ColourName_0[60:75]:        ColourLightBlue,
+	_ColourLowerName_0[60:75]:   ColourLightBlue,
+	_ColourName_0[75:86]:        ColourGreen,
+	_ColourLowerName_0[75:86]:   ColourGreen,
+	_ColourName_0[86:101]:       ColourDarkGreen,
+	_ColourLowerName_0[86:101]:  ColourDarkGreen,
+	_ColourName_0[101:111]:      ColourBlue,
+	_ColourLowerName_0[101:111]: ColourBlue,
+	_ColourName_0[111:122]:      ColourCream,
+	_ColourLowerName_0[111:122]: ColourCream,
+	_ColourName_0[122:133]:      ColourMauve,
+	_ColourLowerName_0[122:133]: ColourMauve,
+	_ColourName_0[133:145]:      ColourPurple,
+	_ColourLowerName_0[133:145]: ColourPurple,
+	_ColourName_0[145:157]:      ColourOrange,
+	_ColourLowerName_0[145:157]: ColourOrange,
+	_ColourName_0[157:168]:      ColourBrown,
+	_ColourLowerName_0[157:168]: ColourBrown,
+	_ColourName_0[168:178]:      ColourGrey,
+	_ColourLowerName_0[168:178]: ColourGrey,
+	_ColourName_0[178:189]:      ColourWhite,
+	_ColourLowerName_0[178:189]: ColourWhite,
+	_ColourName_0[189:198]:      ColourEnd,
+	_ColourLowerName_0[189:198]: ColourEnd,
+	_ColourName_1[0:13]:         ColourInvalid,
+	_ColourLowerName_1[0:13]:    ColourInvalid,
 }
 
 var _ColourNames = []string{
-	_ColourName_0[0:8],
-	_ColourName_0[8:17],
-	_ColourName_0[17:21],
-	_ColourName_0[21:27],
-	_ColourName_0[27:30],
-	_ColourName_0[30:39],
-	_ColourName_0[39:44],
-	_ColourName_0[44:53],
-	_ColourName_0[53:57],
-	_ColourName_0[57:62],
-	_ColourName_0[62:67],
-	_ColourName_0[67:73],
-	_ColourName_0[73:79],
-	_ColourName_0[79:84],
-	_ColourName_0[84:88],
-	_ColourName_0[88:93],
-	_ColourName_0[93:96],
-	_ColourName_1[0:7],
+	_ColourName_0[0:14],
+	_ColourName_0[14:29],
+	_ColourName_0[29:39],
+	_ColourName_0[39:51],
+	_ColourName_0[51:60],
+	_ColourName_0[60:75],
+	_ColourName_0[75:86],
+	_ColourName_0[86:101],
+	_ColourName_0[101:111],
+	_ColourName_0[111:122],
+	_ColourName_0[122:133],
+	_ColourName_0[133:145],
+	_ColourName_0[145:157],
+	_ColourName_0[157:168],
+	_ColourName_0[168:178],
+	_ColourName_0[178:189],
+	_ColourName_0[189:198],
+	_ColourName_1[0:13],
 }
 
 // ColourString retrieves an enum value from the enum constants string name.

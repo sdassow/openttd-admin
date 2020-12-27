@@ -2,20 +2,15 @@
 
 Golang based library and command line tool for OpenTTD server administration.
 
-Currently a simple chat to communicate with players on the server is implemented:
+Currently a simple remote console interface and a chat to communicate with players on the server is implemented:
 ```
-$ ./openttd-admin chat -h
-Chat with other players on a server
-
-Usage:
-  ./openttd-admin chat [address] [flags]
-
-Flags:
-  -c, --config string    openttd config file (default "~/.config/openttd/openttd.cfg")
-  -d, --debug            debug mode
-  -h, --help             help for chat
-  -n, --name string      client name (default "OpenTTD-Admin")
-  -v, --version string   client version (default "1.10.3")
+$ ./openttd-admin rcon -c /tmp/testgame/openttd.cfg
+2020/12/27 21:35:53 connecting to localhost:3977...
+2020/12/27 21:35:53 connected
+> getseed
+net> [admin] Rcon command from 'OpenTTD-Admin' (1.10.3): 'getseed'
+> Generation Seed: 3277715519
+> ^C
 ```
 
 Sample output:

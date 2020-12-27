@@ -42,24 +42,24 @@ const (
 type Colour uint16
 
 const (
-	DarkBlue Colour = iota
-	PaleGreen
-	Pink
-	Yellow
-	Red
-	LightBlue
-	Green
-	DarkGreen
-	Blue
-	Cream
-	Mauve
-	Purple
-	Orange
-	Brown
-	Grey
-	White
-	End
-	Invalid Colour = 0xFF
+	ColourDarkBlue Colour = iota
+	ColourPaleGreen
+	ColourPink
+	ColourYellow
+	ColourRed
+	ColourLightBlue
+	ColourGreen
+	ColourDarkGreen
+	ColourBlue
+	ColourCream
+	ColourMauve
+	ColourPurple
+	ColourOrange
+	ColourBrown
+	ColourGrey
+	ColourWhite
+	ColourEnd
+	ColourInvalid Colour = 0xFF
 )
 
 type DestType int
